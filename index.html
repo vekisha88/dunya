@@ -616,6 +616,299 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* New Sections Styles */
+        .features {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            width: 8px;
+        }
+
+        .testimonials {
+            padding: 8rem 0;
+            background: var(--light-bg);
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin: 1rem;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+        }
+
+        .faq {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--light-bg);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .blog {
+            padding: 8rem 0;
+            background: var(--light-bg);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .blog-image {
+            height: 200px;
+            background: var(--primary-color);
+            position: relative;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .team {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .demo {
+            padding: 8rem 0;
+            background: var(--light-bg);
+        }
+
+        .demo-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .demo-image {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+        .pricing {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .pricing-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-body {
+            padding: 2rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-features li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li i {
+            color: var(--primary-color);
+        }
+
+        .contact {
+            padding: 8rem 0;
+            background: var(--light-bg);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .demo-container {
+                grid-template-columns: 1fr;
+            }
+
+            .demo-image {
+                min-height: 300px;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -760,6 +1053,271 @@
         </div>
     </footer>
 
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Capabilities</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Exchange Integration</h3>
+                    <p>Seamless integration with major cryptocurrency exchanges including Binance, Bybit, and more. Real-time price feeds and liquidity access.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Framework</h3>
+                    <p>Enterprise-grade security with multi-signature wallets, cold storage, and real-time monitoring via Elliptic.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Compliance Tools</h3>
+                    <p>Comprehensive KYC/AML compliance integration with Sumsub, supporting global regulatory requirements.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Advanced analytics and reporting tools with real-time transaction monitoring and customizable reports.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-code"></i>
+                    <h3>API Integration</h3>
+                    <p>RESTful API with comprehensive documentation and SDK support for multiple programming languages.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-server"></i>
+                    <h3>Infrastructure</h3>
+                    <p>High-availability infrastructure with 99.99% uptime, distributed across multiple regions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Success Stories</h2>
+            </div>
+            <div class="testimonial-card fade-in">
+                <p>"DunyaFin's payment processing solution has transformed our crypto operations. The integration was seamless, and their support team is exceptional."</p>
+                <div class="testimonial-author">
+                    <strong>John Smith</strong>
+                    <p>CTO, Forex Trading Platform</p>
+                </div>
+            </div>
+            <!-- Placeholder for more testimonials -->
+            <div class="testimonial-card fade-in" style="opacity: 0.5;">
+                <p>[Placeholder for future client testimonial]</p>
+                <div class="testimonial-author">
+                    <strong>[Client Name]</strong>
+                    <p>[Position, Company]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h3>How long does integration take?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Typical integration time is 2-4 weeks, depending on your platform's complexity. Our team provides full support throughout the process.</p>
+                </div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h3>What cryptocurrencies do you support?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We support 10 major cryptocurrencies including Bitcoin, Ethereum, USDC, and more. New assets can be added based on client needs.</p>
+                </div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h3>How do you ensure security?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We use enterprise-grade security measures including multi-signature wallets, cold storage, and real-time monitoring via Elliptic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Updates</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card fade-in">
+                    <div class="blog-image">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Crypto Payment Processing</h3>
+                        <p>A comprehensive guide to crypto payment infrastructure and best practices.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card fade-in">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Market Trends in Crypto Payments</h3>
+                        <p>Analysis of current trends and future predictions in crypto payment processing.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>John Doe</h3>
+                    <p>CEO & Co-founder</p>
+                    <p>15+ years in fintech and payment processing</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                    <p>Expert in blockchain and payment systems</p>
+                </div>
+                <!-- Placeholder for more team members -->
+                <div class="team-member fade-in" style="opacity: 0.5;">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>[Team Member Name]</h3>
+                    <p>[Position]</p>
+                    <p>[Brief description]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Platform Demo</h2>
+            </div>
+            <div class="demo-container">
+                <div class="demo-content fade-in">
+                    <h3>See Our Platform in Action</h3>
+                    <p>Experience our intuitive admin dashboard and powerful analytics tools. Schedule a personalized demo to see how our solution can work for your business.</p>
+                    <a href="#contact" class="cta-button">Schedule Demo</a>
+                </div>
+                <div class="demo-image fade-in">
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pricing Plans</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="price">$999<span>/month</span></p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to $1M monthly volume</li>
+                            <li><i class="fas fa-check"></i> Basic support</li>
+                            <li><i class="fas fa-check"></i> Standard security</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p class="price">$2,999<span>/month</span></p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to $5M monthly volume</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Advanced security</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited volume</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                            <li><i class="fas fa-check"></i> Custom security</li>
+                            <li><i class="fas fa-check"></i> Custom features</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <script>
         // Header scroll effect
         window.addEventListener('scroll', function() {
@@ -817,6 +1375,21 @@
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
             });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
         });
     </script>
 </body>
