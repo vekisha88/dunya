@@ -909,6 +909,29 @@
                 padding: 1.5rem;
             }
         }
+
+        .legal-disclaimer {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .legal-disclaimer p {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
     </style>
 </head>
 <body>
@@ -925,7 +948,8 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -936,6 +960,7 @@
         <div class="container hero-content">
             <h1>Secure Crypto Payment Processing Infrastructure</h1>
             <p>Enterprise-grade solutions for financial platforms seeking seamless crypto integration</p>
+            <a href="#demo" class="cta-button">Request Demo</a>
         </div>
     </section>
 
@@ -946,6 +971,46 @@
             </div>
             <div class="about-content fade-in">
                 <p>We are a B2B financial technology provider specializing in secure crypto payment processing and digital asset settlement infrastructure. We enable financial platforms to seamlessly integrate crypto payment capabilities while maintaining full compliance and security.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Capabilities</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Exchange Integration</h3>
+                    <p>Seamless integration with major cryptocurrency exchanges including Binance, Bybit, and more. Real-time price feeds and liquidity access.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Framework</h3>
+                    <p>Enterprise-grade security with multi-signature wallets, cold storage, and real-time monitoring via Elliptic.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Compliance Tools</h3>
+                    <p>Comprehensive KYC/AML compliance integration with Sumsub, supporting global regulatory requirements.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Advanced analytics and reporting tools with real-time transaction monitoring and customizable reports.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-code"></i>
+                    <h3>API Integration</h3>
+                    <p>RESTful API with comprehensive documentation and SDK support for multiple programming languages.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <i class="fas fa-server"></i>
+                    <h3>Infrastructure</h3>
+                    <p>High-availability infrastructure with 99.99% uptime, distributed across multiple regions.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -990,6 +1055,24 @@
         </div>
     </section>
 
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Platform Demo</h2>
+            </div>
+            <div class="demo-container">
+                <div class="demo-content fade-in">
+                    <h3>See Our Platform in Action</h3>
+                    <p>Experience our intuitive admin dashboard and powerful analytics tools. Schedule a personalized demo to see how our solution can work for your business.</p>
+                    <a href="#contact" class="cta-button">Schedule Demo</a>
+                </div>
+                <div class="demo-image fade-in">
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="clients" class="clients">
         <div class="container">
             <div class="section-title">
@@ -1016,83 +1099,6 @@
         </div>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Integrate Crypto Payments?</h2>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h3>DunyaFin</h3>
-                <p>Secure crypto payment processing infrastructure for financial platforms.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> contact@dunyafin.com</li>
-                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-title">
-                <h2>Technical Capabilities</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <i class="fas fa-exchange-alt"></i>
-                    <h3>Exchange Integration</h3>
-                    <p>Seamless integration with major cryptocurrency exchanges including Binance, Bybit, and more. Real-time price feeds and liquidity access.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Security Framework</h3>
-                    <p>Enterprise-grade security with multi-signature wallets, cold storage, and real-time monitoring via Elliptic.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Compliance Tools</h3>
-                    <p>Comprehensive KYC/AML compliance integration with Sumsub, supporting global regulatory requirements.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Analytics Dashboard</h3>
-                    <p>Advanced analytics and reporting tools with real-time transaction monitoring and customizable reports.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <i class="fas fa-code"></i>
-                    <h3>API Integration</h3>
-                    <p>RESTful API with comprehensive documentation and SDK support for multiple programming languages.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <i class="fas fa-server"></i>
-                    <h3>Infrastructure</h3>
-                    <p>High-availability infrastructure with 99.99% uptime, distributed across multiple regions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-title">
@@ -1111,6 +1117,96 @@
                 <div class="testimonial-author">
                     <strong>[Client Name]</strong>
                     <p>[Position, Company]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>John Doe</h3>
+                    <p>CEO & Co-founder</p>
+                    <p>15+ years in fintech and payment processing</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                    <p>Expert in blockchain and payment systems</p>
+                </div>
+                <!-- Placeholder for more team members -->
+                <div class="team-member fade-in" style="opacity: 0.5;">
+                    <div class="team-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>[Team Member Name]</h3>
+                    <p>[Position]</p>
+                    <p>[Brief description]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pricing Plans</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="price">$999<span>/month</span></p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to $1M monthly volume</li>
+                            <li><i class="fas fa-check"></i> Basic support</li>
+                            <li><i class="fas fa-check"></i> Standard security</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p class="price">$2,999<span>/month</span></p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to $5M monthly volume</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Advanced security</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited volume</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                            <li><i class="fas fa-check"></i> Custom security</li>
+                            <li><i class="fas fa-check"></i> Custom features</li>
+                        </ul>
+                        <a href="#contact" class="submit-button">Contact Sales</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1181,114 +1277,6 @@
         </div>
     </section>
 
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Team</h2>
-            </div>
-            <div class="team-grid">
-                <div class="team-member fade-in">
-                    <div class="team-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>John Doe</h3>
-                    <p>CEO & Co-founder</p>
-                    <p>15+ years in fintech and payment processing</p>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>Jane Smith</h3>
-                    <p>CTO</p>
-                    <p>Expert in blockchain and payment systems</p>
-                </div>
-                <!-- Placeholder for more team members -->
-                <div class="team-member fade-in" style="opacity: 0.5;">
-                    <div class="team-photo">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>[Team Member Name]</h3>
-                    <p>[Position]</p>
-                    <p>[Brief description]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="demo" class="demo">
-        <div class="container">
-            <div class="section-title">
-                <h2>Platform Demo</h2>
-            </div>
-            <div class="demo-container">
-                <div class="demo-content fade-in">
-                    <h3>See Our Platform in Action</h3>
-                    <p>Experience our intuitive admin dashboard and powerful analytics tools. Schedule a personalized demo to see how our solution can work for your business.</p>
-                    <a href="#contact" class="cta-button">Schedule Demo</a>
-                </div>
-                <div class="demo-image fade-in">
-                    <i class="fas fa-desktop"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-title">
-                <h2>Pricing Plans</h2>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card fade-in">
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <p class="price">$999<span>/month</span></p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to $1M monthly volume</li>
-                            <li><i class="fas fa-check"></i> Basic support</li>
-                            <li><i class="fas fa-check"></i> Standard security</li>
-                            <li><i class="fas fa-check"></i> Email support</li>
-                        </ul>
-                        <a href="#contact" class="submit-button">Get Started</a>
-                    </div>
-                </div>
-                <div class="pricing-card fade-in">
-                    <div class="pricing-header">
-                        <h3>Professional</h3>
-                        <p class="price">$2,999<span>/month</span></p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to $5M monthly volume</li>
-                            <li><i class="fas fa-check"></i> Priority support</li>
-                            <li><i class="fas fa-check"></i> Advanced security</li>
-                            <li><i class="fas fa-check"></i> 24/7 support</li>
-                        </ul>
-                        <a href="#contact" class="submit-button">Get Started</a>
-                    </div>
-                </div>
-                <div class="pricing-card fade-in">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <p class="price">Custom</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Unlimited volume</li>
-                            <li><i class="fas fa-check"></i> Dedicated support</li>
-                            <li><i class="fas fa-check"></i> Custom security</li>
-                            <li><i class="fas fa-check"></i> Custom features</li>
-                        </ul>
-                        <a href="#contact" class="submit-button">Contact Sales</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
@@ -1317,6 +1305,52 @@
             </div>
         </div>
     </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Integrate Crypto Payments?</h2>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@dunyafin.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal-disclaimer">
+                <p>DunyaFin is a company registered in [COMPANY_ADDRESS], with company number [COMPANY_NUMBER]. DunyaFin provides software development services and as such is not subject to regulatory requirements. DunyaFin is NOT a broker, and it does not hold client funds. The platform showcased on this website serves demonstration purposes only. Live account trading is impossible. By logging into the platform, you declare that you understand that the platform presents full functionalities but depositing funds and withdrawals are not possible as it serves demonstration purposes only.</p>
+                
+                <p>This website serves as a common showcase for marketing services of different companies that work in the frames of their local legislations and have respective licenses and permissions for provided services. If you are interested in particular services please contact the sales team for more information about the servicing company; DunyaFin is a software development and integration company and does not provide financial, exchange, investment or consulting services. DunyaFin does not provide any financial or other services advertised on this website and does not trade cryptocurrencies.</p>
+                
+                <p>The information on this website and our services are not directed at residents of any jurisdiction where foreign exchange trading is restricted or prohibited by local laws or regulations. Articles and financial market analyses on this website are prepared or accomplished by an author in his personal capacity. The views and opinions expressed in postings on this website belong solely to the author and may not reflect those of the company's management or the official position of the company.</p>
+                
+                <p>The contents of the site do not constitute financial advice and are provided solely for informational purposes without taking into account your personal objectives, financial situation or needs. Any action you take upon the information on this website is strictly at your own risk and we will not be liable for any losses and damages in connection with the use of our website content.</p>
+                
+                <p>Please carefully study the documents posted on this website: Legal information and Disclaimers, Privacy Policy, Cookie Policy and AML&KYC Summary. These documents are available only in English. You acknowledge that you know the English language at a sufficient level to understand the text of these documents, and you fully understand the legal consequences of these documents. In case you do not understand or understand the English language poorly, you acknowledge that you have used the services of a professional interpreter. If you don't agree with this statement or the information provided within the documents, please leave this website immediately.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DunyaFin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Header scroll effect
