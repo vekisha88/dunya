@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DunyaFin - Crypto Payment Processing Infrastructure</title>
+    <title>Chainberry - Crypto Payment Processing Infrastructure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
+            --primary-color: #4361ee;
+            --secondary-color: #7209b7;
+            --accent-color: #3a0ca3;
+            --neon-blue: #4cc9f0;
+            --neon-purple: #7209b7;
+            --dark-bg: #0a0426;
             --text-color: #1f2937;
-            --light-bg: #f3f4f6;
-            --gradient-start: #2563eb;
-            --gradient-end: #1e40af;
+            --light-bg: #f8fafc;
+            --gradient-start: #4361ee;
+            --gradient-end: #7209b7;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             --section-padding: 3.5rem 0;
@@ -73,20 +76,38 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: transform 0.3s ease;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
         }
 
-        .logo:hover {
-            transform: scale(1.05);
+        .logo-icon {
+            position: relative;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(67, 97, 238, 0.3);
         }
 
-        .logo i {
-            font-size: 1.8rem;
+        .logo-icon i {
+            color: white;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
 
         nav ul {
@@ -124,7 +145,7 @@
         /* Hero Section */
         .hero {
             padding: 7rem 0 3.5rem;
-            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             position: relative;
             overflow: hidden;
@@ -346,7 +367,7 @@
         /* CTA Section */
         .cta {
             padding: 8rem 0;
-            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             text-align: center;
             position: relative;
@@ -405,6 +426,8 @@
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: var(--hover-shadow);
+            background: var(--light-bg);
+            color: var(--secondary-color);
         }
 
         /* Footer */
@@ -1006,14 +1029,29 @@
             color: white;
             transform: translateY(-3px);
         }
+
+        /* Remove Business Model styles */
+        .business-model {
+            display: none;
+        }
+
+        .bmc-grid {
+            display: none;
+        }
+
+        .bmc-card {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i class="fas fa-shield-alt"></i>
-                DunyaFin
+                <div class="logo-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <span class="logo-text">Chainberry</span>
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
@@ -1022,8 +1060,7 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#clients">Clients</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -1034,7 +1071,7 @@
         <div class="container hero-content">
             <h1>Secure Crypto Payment Processing Infrastructure</h1>
             <p>Enterprise-grade solutions for financial platforms seeking seamless crypto integration</p>
-            <a href="#demo" class="cta-button">Request Demo</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
     </section>
 
@@ -1089,24 +1126,6 @@
         </div>
     </section>
 
-    <section id="demo" class="demo">
-        <div class="container">
-            <div class="section-title">
-                <h2>Platform Demo</h2>
-            </div>
-            <div class="demo-container">
-                <div class="demo-content fade-in">
-                    <h3>See Our Platform in Action</h3>
-                    <p>Experience our intuitive admin dashboard and powerful analytics tools. Schedule a personalized demo to see how our solution can work for your business.</p>
-                    <a href="#contact" class="cta-button">Schedule Demo</a>
-                </div>
-                <div class="demo-image fade-in">
-                    <i class="fas fa-desktop"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="clients" class="clients">
         <div class="container">
             <div class="section-title">
@@ -1128,121 +1147,6 @@
                 <div class="client-card fade-in">
                     <i class="fas fa-money-bill-wave"></i>
                     <h3>Payment Service Providers</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Success Stories</h2>
-            </div>
-            <div class="testimonial-card fade-in">
-                <p>"DunyaFin's payment processing solution has transformed our crypto operations. The integration was seamless, and their support team is exceptional."</p>
-                <div class="testimonial-author">
-                    <strong>John Smith</strong>
-                    <p>CTO, Forex Trading Platform</p>
-                </div>
-            </div>
-            <!-- Placeholder for more testimonials -->
-            <div class="testimonial-card fade-in" style="opacity: 0.5;">
-                <p>[Placeholder for future client testimonial]</p>
-                <div class="testimonial-author">
-                    <strong>[Client Name]</strong>
-                    <p>[Position, Company]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section class="contact-cta">
-        <div class="container">
-            <div class="section-title">
-                <h2>Ready to Get Started?</h2>
-                <p>Contact our team to discuss your specific needs and requirements</p>
-            </div>
-            <div class="cta-content">
-                <div class="cta-features">
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Customized Solutions</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Enterprise-Grade Security</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>24/7 Technical Support</span>
-                    </div>
-                </div>
-                <a href="#contact" class="cta-button">Contact Us</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-item fade-in">
-                <div class="faq-question">
-                    <h3>How long does integration take?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Typical integration time is 2-4 weeks, depending on your platform's complexity. Our team provides full support throughout the process.</p>
-                </div>
-            </div>
-            <div class="faq-item fade-in">
-                <div class="faq-question">
-                    <h3>What cryptocurrencies do you support?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>We support 10 major cryptocurrencies including Bitcoin, Ethereum, USDC, and more. New assets can be added based on client needs.</p>
-                </div>
-            </div>
-            <div class="faq-item fade-in">
-                <div class="faq-question">
-                    <h3>How do you ensure security?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>We use enterprise-grade security measures including multi-signature wallets, cold storage, and real-time monitoring via Elliptic.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-title">
-                <h2>Latest Updates</h2>
-            </div>
-            <div class="blog-grid">
-                <div class="blog-card fade-in">
-                    <div class="blog-image">
-                        <i class="fas fa-newspaper"></i>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Understanding Crypto Payment Processing</h3>
-                        <p>A comprehensive guide to crypto payment infrastructure and best practices.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-card fade-in">
-                    <div class="blog-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Market Trends in Crypto Payments</h3>
-                        <p>Analysis of current trends and future predictions in crypto payment processing.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1282,7 +1186,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p>Email: info@dunyafin.com</p>
+                    <p>Email: info@chainberry.com</p>
                     <p>Phone: +1 (555) 123-4567</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -1300,9 +1204,9 @@
                 </div>
             </div>
             <div class="legal-disclaimer">
-                <p>DunyaFin is a company registered in [COMPANY_ADDRESS], with company number [COMPANY_NUMBER]. DunyaFin provides software development services and as such is not subject to regulatory requirements. DunyaFin is NOT a broker, and it does not hold client funds. The platform showcased on this website serves demonstration purposes only. Live account trading is impossible. By logging into the platform, you declare that you understand that the platform presents full functionalities but depositing funds and withdrawals are not possible as it serves demonstration purposes only.</p>
+                <p>Chainberry is a company registered in [COMPANY_ADDRESS], with company number [COMPANY_NUMBER]. Chainberry provides software development services and as such is not subject to regulatory requirements. Chainberry is NOT a broker, and it does not hold client funds. The platform showcased on this website serves demonstration purposes only. Live account trading is impossible. By logging into the platform, you declare that you understand that the platform presents full functionalities but depositing funds and withdrawals are not possible as it serves demonstration purposes only.</p>
                 
-                <p>This website serves as a common showcase for marketing services of different companies that work in the frames of their local legislations and have respective licenses and permissions for provided services. If you are interested in particular services please contact the sales team for more information about the servicing company; DunyaFin is a software development and integration company and does not provide financial, exchange, investment or consulting services. DunyaFin does not provide any financial or other services advertised on this website and does not trade cryptocurrencies.</p>
+                <p>This website serves as a common showcase for marketing services of different companies that work in the frames of their local legislations and have respective licenses and permissions for provided services. If you are interested in particular services please contact the sales team for more information about the servicing company; Chainberry is a software development and integration company and does not provide financial, exchange, investment or consulting services. Chainberry does not provide any financial or other services advertised on this website and does not trade cryptocurrencies.</p>
                 
                 <p>The information on this website and our services are not directed at residents of any jurisdiction where foreign exchange trading is restricted or prohibited by local laws or regulations. Articles and financial market analyses on this website are prepared or accomplished by an author in his personal capacity. The views and opinions expressed in postings on this website belong solely to the author and may not reflect those of the company's management or the official position of the company.</p>
                 
@@ -1311,7 +1215,7 @@
                 <p>Please carefully study the documents posted on this website: Legal information and Disclaimers, Privacy Policy, Cookie Policy and AML&KYC Summary. These documents are available only in English. You acknowledge that you know the English language at a sufficient level to understand the text of these documents, and you fully understand the legal consequences of these documents. In case you do not understand or understand the English language poorly, you acknowledge that you have used the services of a professional interpreter. If you don't agree with this statement or the information provided within the documents, please leave this website immediately.</p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DunyaFin. All rights reserved.</p>
+                <p>&copy; 2024 Chainberry. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1372,14 +1276,6 @@
                 const icon = menuToggle.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
-            });
-        });
-
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                faqItem.classList.toggle('active');
             });
         });
 
